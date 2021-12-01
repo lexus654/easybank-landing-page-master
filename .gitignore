@@ -17,8 +17,9 @@
 
 package.json
 package-lock.json
-README-teplate.md
+README-template.md
 README.md
 images
 node_modules
 design
+style-guide.md
