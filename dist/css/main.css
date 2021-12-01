@@ -1,2 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 * {
-  background-color: aqua; }
+  font-family: "Public Sans", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.btn--request {
+  height: 35px;
+  width: 140px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #31d35c;
+  background: linear-gradient(22deg, rgba(49, 211, 92, 0.689513) 0%, rgba(49, 211, 92, 0.664303) 34%, rgba(43, 185, 209, 0.524247) 72%, rgba(43, 183, 218, 0.60548) 100%);
+  font-weight: 700;
+  color: white; }
+
+.btn--request:hover {
+  background: #31d35c;
+  background: linear-gradient(22deg, rgba(49, 211, 92, 0.496236) 0%, rgba(49, 211, 92, 0.440214) 34%, rgba(43, 185, 209, 0.367384) 72%, rgba(43, 183, 218, 0.521446) 100%); }
+
+.navbar {
+  padding: 0 100px;
+  height: 60px;
+  max-width: 1440px;
+  min-width: 1020px;
+  background-color: #9698a6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar .nav__logo {
+    height: 20px; }
+  .navbar .nav__list {
+    display: flex;
+    list-style-type: none; }
+    .navbar .nav__list li {
+      margin: 15px 0px 20px 20px;
+      font-size: 15px; }
