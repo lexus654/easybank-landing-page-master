@@ -5,6 +5,12 @@
   padding: 0;
   margin: 0; }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background: #f3f4f6;
+  justify-content: center; }
+
 .btn--request {
   height: 35px;
   width: 140px;
@@ -22,14 +28,17 @@
   background: linear-gradient(22deg, rgba(49, 211, 92, 0.496236) 0%, rgba(49, 211, 92, 0.440214) 34%, rgba(43, 185, 209, 0.367384) 72%, rgba(43, 183, 218, 0.521446) 100%); }
 
 .navbar {
+  position: sticky;
+  top: 0;
   padding: 0 100px;
   height: 60px;
   max-width: 1440px;
   min-width: 1020px;
-  background-color: #9698a6;
+  background-color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  z-index: 100; }
   .navbar .nav__logo {
     height: 20px; }
   .navbar .nav__list {
@@ -38,3 +47,33 @@
     .navbar .nav__list li {
       margin: 15px 0px 20px 20px;
       font-size: 15px; }
+
+.section {
+  max-width: 1440px;
+  min-width: 1020px;
+  height: 450px; }
+
+.first {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  background: #fafafa url("/images/bg-intro-desktop.svg") no-repeat 700px -150px/800px; }
+  .first .first__columnItems {
+    width: 40%;
+    position: relative;
+    top: 70px; }
+    .first .first__columnItems .first__title {
+      font-size: 44px;
+      font-weight: 300;
+      color: #2d314d;
+      line-height: 50px;
+      margin-bottom: 20px; }
+    .first .first__columnItems .first__text {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #9698a6;
+      width: 80%; }
+  .first .first__phone {
+    position: relative;
+    top: -50px;
+    height: 600px; }

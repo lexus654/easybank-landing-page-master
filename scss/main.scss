@@ -20,7 +20,12 @@ $White: hsl(0, 0%, 100%);
   padding: 0;
   margin: 0;
 }
-
+body {
+  display: flex;
+  flex-direction: column;
+  background: $Light-Grayish-Blue;
+  justify-content: center;
+}
 // request button
 .btn--request {
   height: 35px;
@@ -54,14 +59,17 @@ $White: hsl(0, 0%, 100%);
 
 // navbar styling
 .navbar {
+  position: sticky;
+  top: 0;
   padding: 0 100px;
   height: 60px;
   max-width: 1440px;
   min-width: 1020px;
-  background-color: $Grayish-Blue;
+  background-color: $White;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
   .nav__logo {
     height: 20px;
   }
@@ -73,5 +81,44 @@ $White: hsl(0, 0%, 100%);
       margin: 15px 0px 20px 20px;
       font-size: 15px;
     }
+  }
+}
+
+// width and height
+.section {
+  max-width: 1440px;
+  min-width: 1020px;
+  height: 450px;
+}
+
+// furst section styling
+.first {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  background: $Very-Light-Gray url("/images/bg-intro-desktop.svg") no-repeat
+    700px -150px/ 800px;
+  .first__columnItems {
+    width: 40%;
+    position: relative;
+    top: 70px;
+    .first__title {
+      font-size: 44px;
+      font-weight: 300;
+      color: $Dark-Blue;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+    .first__text {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: $Grayish-Blue;
+      width: 80%;
+    }
+  }
+  .first__phone {
+    position: relative;
+    top: -50px;
+    height: 600px;
   }
 }
