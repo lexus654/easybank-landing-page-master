@@ -8,8 +8,8 @@
 body {
   display: flex;
   flex-direction: column;
-  background: #f3f4f6;
-  justify-content: center; }
+  background: cornflowerblue;
+  padding: 0 100px; }
 
 .btn--request {
   height: 35px;

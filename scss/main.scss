@@ -23,8 +23,9 @@ $White: hsl(0, 0%, 100%);
 body {
   display: flex;
   flex-direction: column;
-  background: $Light-Grayish-Blue;
-  justify-content: center;
+  background: cornflowerblue;
+
+  padding: 0 100px;
 }
 // request button
 .btn--request {
