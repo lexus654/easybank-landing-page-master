@@ -132,11 +132,13 @@ body {
   flex-direction: column;
   justify-content: center;
   .second__wrapperText {
+    margin-top: -50px;
     width: 50%;
     .second__title {
       font-size: 30px;
       font-weight: 300;
       color: $Dark-Blue;
+      margin-bottom: 20px;
     }
     .second__text {
       font-size: 14px;
@@ -145,6 +147,28 @@ body {
   }
   .second__wrapperItems {
     display: flex;
+    margin-top: 30px;
     flex-direction: row;
+    justify-content: space-between;
+    .second__wrapperItems__item {
+      margin-right: 50px;
+    }
+    .item__logo {
+      height: 55px;
+      margin-bottom: 20px;
+    }
+    .item__title {
+      font-size: 20px;
+      font-weight: 300;
+      color: black;
+      margin-bottom: 20px;
+    }
+    .item__text {
+      font-size: 14px;
+      color: $Grayish-Blue;
+      line-height: 18px;
+      max-width: 300px;
+      min-width: 200px;
+    }
   }
 }
