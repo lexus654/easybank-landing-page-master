@@ -63,7 +63,7 @@ body {
   position: sticky;
   top: 0;
   padding: 0 100px;
-  height: 60px;
+  height: 80px;
   max-width: 1440px;
   min-width: 1020px;
   background-color: $White;
@@ -87,6 +87,8 @@ body {
 
 // width and height
 .section {
+  padding: 0 100px;
+
   max-width: 1440px;
   min-width: 1020px;
   height: 450px;
@@ -94,7 +96,6 @@ body {
 
 // furst section styling
 .first {
-  padding: 0 100px;
   display: flex;
   justify-content: space-between;
   background: $Very-Light-Gray url("/images/bg-intro-desktop.svg") no-repeat
@@ -121,5 +122,29 @@ body {
     position: relative;
     top: -50px;
     height: 600px;
+  }
+}
+
+// second section styling
+.second {
+  background-color: $Light-Grayish-Blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .second__wrapperText {
+    width: 50%;
+    .second__title {
+      font-size: 30px;
+      font-weight: 300;
+      color: $Dark-Blue;
+    }
+    .second__text {
+      font-size: 14px;
+      color: $Grayish-Blue;
+    }
+  }
+  .second__wrapperItems {
+    display: flex;
+    flex-direction: row;
   }
 }

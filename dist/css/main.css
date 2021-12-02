@@ -31,7 +31,7 @@ body {
   position: sticky;
   top: 0;
   padding: 0 100px;
-  height: 60px;
+  height: 80px;
   max-width: 1440px;
   min-width: 1020px;
   background-color: white;
@@ -49,12 +49,12 @@ body {
       font-size: 15px; }
 
 .section {
+  padding: 0 100px;
   max-width: 1440px;
   min-width: 1020px;
   height: 450px; }
 
 .first {
-  padding: 0 100px;
   display: flex;
   justify-content: space-between;
   background: #fafafa url("/images/bg-intro-desktop.svg") no-repeat 700px -150px/800px; }
@@ -77,3 +77,21 @@ body {
     position: relative;
     top: -50px;
     height: 600px; }
+
+.second {
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .second .second__wrapperText {
+    width: 50%; }
+    .second .second__wrapperText .second__title {
+      font-size: 30px;
+      font-weight: 300;
+      color: #2d314d; }
+    .second .second__wrapperText .second__text {
+      font-size: 14px;
+      color: #9698a6; }
+  .second .second__wrapperItems {
+    display: flex;
+    flex-direction: row; }
