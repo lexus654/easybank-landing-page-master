@@ -20,13 +20,7 @@ $White: hsl(0, 0%, 100%);
   padding: 0;
   margin: 0;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  background: cornflowerblue;
 
-  padding: 0 100px;
-}
 // request button
 .btn--request {
   height: 35px;
@@ -58,14 +52,25 @@ body {
   );
 }
 
+// width
+.section,
+.navbar,
+.footer {
+  padding: 0 100px;
+  // max-width: 1440px;
+  // min-width: 1020px;
+}
+//height
+.section {
+  height: 450px;
+}
+
 // navbar styling
 .navbar {
   position: sticky;
   top: 0;
   padding: 0 100px;
   height: 80px;
-  max-width: 1440px;
-  min-width: 1020px;
   background-color: $White;
   display: flex;
   justify-content: space-between;
@@ -76,7 +81,8 @@ body {
   }
   .nav__list {
     display: flex;
-
+    justify-content: space-around;
+    width: 50%;
     list-style-type: none;
     li {
       margin: 15px 0px 20px 20px;
@@ -84,16 +90,6 @@ body {
     }
   }
 }
-
-// width and height
-.section {
-  padding: 0 100px;
-
-  max-width: 1440px;
-  min-width: 1020px;
-  height: 450px;
-}
-
 // furst section styling
 .first {
   display: flex;
@@ -192,6 +188,7 @@ body {
     justify-content: row;
     width: 100%;
     justify-content: space-around;
+
     .article {
       cursor: pointer;
       margin-top: -90px;
@@ -229,13 +226,15 @@ body {
         color: $Dark-Blue;
       }
     }
+    .article:hover {
+      transform: scale(1.02);
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 
 // ffooter styling
 .footer {
-  max-width: 1440px;
-  min-width: 1020px;
   padding: 0 100px;
   height: 160px;
   background-color: $Dark-Blue;
@@ -284,6 +283,9 @@ body {
     height: 100%;
     justify-content: space-between;
     padding: 25px 0;
+    .footer__credits {
+      color: $White;
+    }
   }
 }
 
