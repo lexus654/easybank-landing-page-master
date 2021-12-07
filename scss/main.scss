@@ -311,3 +311,265 @@ $White: hsl(0, 0%, 100%);
 // add a new file media
 // media queries on the seperate file,
 // Make sure that the file is responsive on both mobile and website on given scale
+
+@media (max-width: 400px) {
+  // mobile design
+  // width
+  .section,
+  .navbar,
+  .footer {
+    padding: 0 30px;
+    // max-width: 1440px;
+    // min-width: 1020px;
+  }
+  //height
+  .section {
+    height: 800px;
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    padding: 0 30px;
+    height: 80px;
+    background-color: $White;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    .nav__logo {
+      height: 20px;
+    }
+    .nav__list {
+      display: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 15px;
+
+        text-align: center;
+      }
+      li:hover {
+        cursor: pointer;
+        background: rgb(49, 211, 92);
+        background: linear-gradient(
+          22deg,
+          rgba(49, 211, 92, 0.6895133053221288) 0%,
+          rgba(49, 211, 92, 0.6643032212885154) 34%,
+          rgba(43, 185, 209, 0.5242471988795518) 72%,
+          rgba(43, 183, 218, 0.6054796918767507) 100%
+        );
+        background-size: 100% 5px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+    }
+    .nav__btn--request {
+      display: none;
+    }
+  }
+  // furst section styling
+  .first {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background: $Very-Light-Gray url("/images/bg-intro-desktop.svg") no-repeat
+      40px -125px/ 550px;
+    .first__columnItems {
+      width: 100%;
+      position: static;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .first__title {
+        font-size: 35px;
+        font-weight: 400;
+        color: $Dark-Blue;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .first__text {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: $Grayish-Blue;
+        width: 100%;
+      }
+    }
+    .first__phone {
+      position: relative;
+      top: -135px;
+      height: 440.72px;
+    }
+  }
+
+  // second section styling
+  .second {
+    background-color: $Light-Grayish-Blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .second__wrapperText {
+      margin-top: -50px;
+      width: 50%;
+      .second__title {
+        font-size: 30px;
+        font-weight: 300;
+        color: $Dark-Blue;
+        margin-bottom: 20px;
+      }
+      .second__text {
+        font-size: 14px;
+        color: $Grayish-Blue;
+      }
+    }
+    .second__wrapperItems {
+      display: flex;
+      margin-top: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      .second__wrapperItems__item {
+        margin-right: 50px;
+      }
+      .item__logo {
+        height: 55px;
+        margin-bottom: 20px;
+      }
+      .item__title {
+        font-size: 20px;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 20px;
+      }
+      .item__text {
+        font-size: 14px;
+        color: $Grayish-Blue;
+        line-height: 18px;
+        max-width: 300px;
+        min-width: 200px;
+      }
+    }
+  }
+
+  // third section styling
+  .third {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $Very-Light-Gray;
+    .third__title {
+      margin-top: -20px;
+      font-size: 30px;
+      font-weight: 300;
+      color: $Dark-Blue;
+      margin-bottom: 20px;
+    }
+
+    .third__wrapperArticle {
+      display: flex;
+      justify-content: row;
+      width: 100%;
+      justify-content: space-around;
+
+      .article {
+        cursor: pointer;
+        margin-top: -90px;
+        margin-right: 10px;
+        width: 200px;
+        height: 300px;
+        background-color: $White;
+        box-shadow: -1px 2px 5px -1px rgba(0, 0, 0, 0.98);
+        border-radius: 10px;
+
+        .article__author,
+        .article__text,
+        .article__title {
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+        .article__image {
+          width: 100%;
+          height: 120px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+        .article__author {
+          font-size: 10px;
+          color: $Grayish-Blue;
+        }
+        .article__text {
+          font-size: 12px;
+          color: $Grayish-Blue;
+        }
+        .article__title {
+          font-weight: 300;
+          font-size: 16px;
+          color: $Dark-Blue;
+        }
+      }
+      .article:hover {
+        transform: scale(1.02);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  // ffooter styling
+  .footer {
+    padding: 0 100px;
+    height: 160px;
+    background-color: $Dark-Blue;
+    display: flex;
+    justify-content: space-between;
+    .footer__group__img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 0;
+      height: 100%;
+      .group__logo {
+        height: 20px;
+      }
+      .icon {
+        margin: 0 3px;
+        cursor: pointer;
+      }
+    }
+    .footer__group__list {
+      display: flex;
+      width: 25%;
+      height: 100%;
+      justify-content: space-between;
+      padding: 25px 0;
+      align-items: center;
+      margin-left: -250px;
+      .group__list {
+        list-style-type: none;
+
+        li {
+          margin: 14px 0;
+          font-size: 16px;
+          color: $Light-Grayish-Blue;
+          line-height: 25px;
+          cursor: pointer;
+        }
+      }
+    }
+    .footer__group__btn {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      padding: 25px 0;
+      .footer__credits {
+        color: $White;
+      }
+    }
+  }
+} ;
