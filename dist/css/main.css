@@ -432,7 +432,9 @@
       flex-direction: column;
       height: 100%;
       align-items: center;
-      justify-content: space-between;
+      justify-content: initial;
       padding: 25px 0; }
       .footer .footer__group__btn .footer__credits {
-        color: white; } }
+        color: white;
+        margin-top: 20px;
+        font-size: 14px; } }

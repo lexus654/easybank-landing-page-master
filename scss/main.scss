@@ -595,10 +595,12 @@ $White: hsl(0, 0%, 100%);
       flex-direction: column;
       height: 100%;
       align-items: center;
-      justify-content: space-between;
+      justify-content: initial;
       padding: 25px 0;
       .footer__credits {
         color: $White;
+        margin-top: 20px;
+        font-size: 14px;
       }
     }
   }
