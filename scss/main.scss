@@ -76,6 +76,35 @@ $White: hsl(0, 0%, 100%);
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  .nav__menu {
+    display: none;
+    height: 50px;
+    // background-color: rgb(128, 128, 128);
+
+    // common style
+    .menu__line,
+    .menu__line::after,
+    .menu__line::before {
+      width: 30px;
+      height: 2px;
+      background-color: $Grayish-Blue;
+      border-radius: 100px;
+    }
+    .menu__line {
+      position: relative;
+      top: 50%;
+    }
+    .menu__line:after {
+      content: "";
+      position: absolute;
+      top: 8px;
+    }
+    .menu__line:before {
+      content: "";
+      position: absolute;
+      top: -8px;
+    }
+  }
   .nav__logo {
     height: 20px;
   }
@@ -341,6 +370,9 @@ $White: hsl(0, 0%, 100%);
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    .nav__menu {
+      display: inline-block;
+    }
     .nav__logo {
       height: 20px;
     }
