@@ -260,7 +260,19 @@
     .navbar .nav__logo {
       height: 20px; }
     .navbar .nav__list {
-      display: none; }
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 100;
+      position: fixed;
+      top: 50px;
+      left: 0;
+      right: 0;
+      height: 250px;
+      width: 100%;
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: white; }
       .navbar .nav__list li {
         display: flex;
         align-items: center;
