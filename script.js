@@ -3,13 +3,16 @@
 console.log("hello");
 const menu = document.getElementById("nav__menu");
 const list = document.getElementById("nav__list");
+const modal = document.getElementById("modal");
 
 menu.addEventListener("click", () => {
-  list.style.display = "flex";
+  modal.classList.add("display");
+  list.classList.add("display");
 });
 
 window.onclick = function (e) {
-  if (e.target == list) {
-    list.style.display = "none";
+  if (e.target == modal) {
+    modal.classList.remove("display");
+    list.classList.remove("display");
   }
 };

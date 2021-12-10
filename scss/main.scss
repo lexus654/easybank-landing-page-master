@@ -21,6 +21,21 @@ $White: hsl(0, 0%, 100%);
   margin: 0;
 }
 
+// styles for toggling
+
+// modal
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+}
+
 // request button
 .btn--request {
   height: 35px;
@@ -363,15 +378,16 @@ $White: hsl(0, 0%, 100%);
   .navbar {
     position: sticky;
     top: 0;
-    padding: 0 30px;
+    padding: 0 0px;
     height: 60px;
     background-color: $White;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 100;
     .nav__menu {
       display: inline-block;
+      margin-left: 150px;
     }
     .nav__logo {
       height: 20px;
@@ -382,13 +398,12 @@ $White: hsl(0, 0%, 100%);
       align-items: center;
       z-index: 100;
       position: fixed;
-      top: 50px;
-      left: 0;
-      right: 0;
+      top: 90px;
       height: 250px;
-      width: 100%;
+      width: 95%;
       overflow: auto; /* Enable scroll if needed */
       background-color: white;
+      border-radius: 10px;
 
       li {
         display: flex;
@@ -647,4 +662,11 @@ $White: hsl(0, 0%, 100%);
       }
     }
   }
-} ;
+}
+
+.none {
+  display: none;
+}
+.display {
+  display: flex !important;
+}
